@@ -1,0 +1,95 @@
+@import 'variables';
+@import 'media';
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700&family=Libre+Franklin:wght@100;200;300;400;500;600&display=swap');
+
+body {
+	color: $color-dark;
+	font-family: $main-font, sans-serif;
+	font-size: 19px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4 {
+	color: $color-blue;
+	font-family: $title-font, sans-serif;
+	font-weight: 600;
+}
+p {
+	font-weight: 200;
+}
+.text-blue {
+	color: $color-blue;	
+}
+.text-orange {
+	color: $color-orange;	
+}
+.hover-orange:hover {
+	color: $color-orange;
+}
+.text-dark {
+	color: $color-dark;	
+}
+.text-small {
+	font-size: 1em;
+	font-weight: 400;
+}
+.dropdown-hover {
+	position: relative;
+}
+.dropdown-hover:hover .dropdown-menu {
+	display: block;
+	
+}
+.top-banner {
+	background-image: url("../i/home.jpeg");
+	height: 400px;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-nav {
+	
+	& .nav-link {
+		color: $color-dark;
+		font-weight: 300;
+		&:hover{
+			color: $color-orange;
+		}
+	}
+}
+.nav-link .dropdown-menu:hover {
+	color: $color-orange;
+}
+.dropdown-menu {
+
+	border: none;
+	border-bottom: 2px $color-blue solid;
+	border-radius: 0;
+	left: -50%;
+    top: 68%;
+	
+	& .dropdown-item {
+		color: $color-dark;
+		font-weight: 300;
+		font-size: 0.9em;
+	
+		&:hover {
+			color: $color-orange!important;
+			background-color: #ffffff;
+		}
+	}
+}
+.footer {
+	background-color: $color-blue;
+	color: #ffffff;
+
+	&__copy{
+		font-size:0.9em;
+		font-weight:300;
+	}
+	& .nav-link {
+		color: #ffffff;
+		font-weight:300;
+		font-size: 0.85em;
+	}
+}
