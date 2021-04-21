@@ -1,0 +1,17 @@
+.more-info {
+	background: $color-blue;
+	border-bottom: 2px solid #ffffff;
+
+	&__link {
+		background: #ffffff;
+		display: block;
+		padding: 15px 20px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	& .link__el {
+			display: inline-block;
+		}
+}

@@ -1,0 +1,31 @@
+.team {
+	&__name {
+		font-size: 1.1rem;
+	}
+	&__img {
+		width: 100%;
+	}
+}
+.delimiter {
+	width:100%;
+	border-bottom: 1px solid $color-blue;
+}
+.team__list {
+  list-style: none;
+  padding-left: 17px;
+  & li {
+  	padding: 10px 0;
+  	font-weight: 200;
+  }
+  & li::before {
+	  content: "\25A0";
+	  color: $color-blue;
+	  font-weight: bold;
+	  display: inline-block; 
+	  width: 1em;
+	  margin-left: -1em;
+	}
+}
+
+ul 
+.team__list {}

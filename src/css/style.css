@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700&family=Libre+Franklin:wght@100;200;300;400;500;600&display=swap");
 body {
   color: #101010;
@@ -75,9 +76,22 @@ p {
   color: #101010;
 }
 
+.text-white {
+  color: #ffffff;
+}
+
 .text-small {
   font-size: 1em;
   font-weight: 300;
+}
+
+.text-small-2 {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.title-page {
+  font-size: 2.1rem;
 }
 
 .navbar-nav .nav-item {
@@ -249,6 +263,52 @@ p {
 }
 .news__date {
   font-size: 0.9rem;
+}
+
+.team__name {
+  font-size: 1.1rem;
+}
+.team__img {
+  width: 100%;
+}
+
+.delimiter {
+  width: 100%;
+  border-bottom: 1px solid #003883;
+}
+
+.team__list {
+  list-style: none;
+  padding-left: 17px;
+}
+.team__list li {
+  padding: 10px 0;
+  font-weight: 200;
+}
+.team__list li::before {
+  content: "■";
+  color: #003883;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.more-info {
+  background: #003883;
+  border-bottom: 2px solid #ffffff;
+}
+.more-info__link {
+  background: #ffffff;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.more-info__link:hover {
+  text-decoration: none;
+}
+.more-info .link__el {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
