@@ -141,6 +141,11 @@ p {
 .icon.icon--marks {
   background: url("../i/marks.svg");
 }
+.icon.icon--arrow {
+  background: url("../i/arrow.svg");
+  height: 20px;
+  width: 20px;
+}
 
 .competence__box {
   border-left: 1px solid #003883;
@@ -181,10 +186,37 @@ p {
   width: 212px;
   padding: 0.475rem 0.75rem 0.375rem;
   border: none;
-  display: block;
 }
 .btn-yellow:hover {
   background-color: #003883;
+}
+
+.news {
+  background-color: #f1eeea;
+}
+.news__item {
+  background: #ffffff;
+  display: block;
+  text-decoration: none;
+  color: #101010;
+  font-weight: 200;
+  height: 100%;
+}
+.news__item:hover {
+  text-decoration: none;
+  color: #101010;
+}
+.news__item .icon--arrow {
+  transition: transform 1s;
+}
+.news__item:hover .icon--arrow {
+  transform: translateX(40%);
+}
+.news__title {
+  font-size: 1rem;
+}
+.news__date {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
