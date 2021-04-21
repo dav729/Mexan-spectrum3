@@ -1,0 +1,23 @@
+.competence {
+	
+	&__box {
+		border-left: 1px solid $color-blue;
+		padding: 0 43px;
+		margin-bottom: 1.5em;
+		@media(max-width: $mobile) {
+			border-left: none;
+		}
+	}
+	&__box:first-child {
+		border-left: none;
+		padding: 0 45px 0 0;
+
+		@media(max-width: $tablet) {
+			border-left: 1px solid $color-blue;
+			padding: 0 43px;
+		}
+		@media(max-width: $mobile) {
+			border-left: none;
+		}
+	}
+}

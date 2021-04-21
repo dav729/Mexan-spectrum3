@@ -1,0 +1,28 @@
+.news {
+	background-color: $color-grey;
+
+	&__item {
+		background: #ffffff;
+		display: block;
+		text-decoration: none;
+		color: $color-dark;
+		font-weight: 200;
+		height: 100%;
+	}
+	&__item:hover {
+		text-decoration: none;
+		color: $color-dark;
+	}
+	&__item .icon--arrow{
+		transition: transform 1s;
+	}
+	&__item:hover .icon--arrow{
+		transform: translateX(40%);
+	}
+	&__title {
+		font-size: 1rem;
+	}
+	&__date {
+		font-size: 0.9rem;
+	}
+}

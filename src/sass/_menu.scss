@@ -1,0 +1,45 @@
+.navbar-nav {
+	& .nav-item {
+		margin: 0 15px;
+	}
+	& .nav-link {
+		color: $color-dark;
+		font-weight: 300;
+		&:hover{
+			color: $color-orange;
+		}
+	}
+}
+.nav-link .dropdown-menu:hover {
+	color: $color-orange;
+}
+.dropdown-menu {
+
+	border: none;
+	border-bottom: 2px $color-blue solid;
+	border-radius: 0;
+	left: -50%;
+    top: 68%;
+	
+	& .dropdown-item {
+		color: $color-dark;
+		font-weight: 300;
+		font-size: 0.9em;
+	
+		&:hover {
+			color: $color-orange!important;
+			background-color: #ffffff;
+		}
+	}
+	@media(max-width: $tablet) {
+		display: block;
+		border-bottom: none;		
+	}
+}
+.dropdown-hover {
+	position: relative;
+}
+.dropdown-hover:hover .dropdown-menu {
+	display: block;
+	
+}

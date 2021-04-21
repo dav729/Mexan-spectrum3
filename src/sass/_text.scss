@@ -1,0 +1,16 @@
+.text-blue {
+	color: $color-blue;	
+}
+.text-orange {
+	color: $color-orange;	
+}
+.hover-orange:hover {
+	color: $color-orange;
+}
+.text-dark {
+	color: $color-dark;	
+}
+.text-small {
+	font-size: 1em;
+	font-weight: 300;
+}

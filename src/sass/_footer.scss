@@ -1,0 +1,14 @@
+.footer {
+	background-color: $color-blue;
+	color: #ffffff;
+
+	&__copy{
+		font-size:0.9em;
+		font-weight:300;
+	}
+	& .nav-link {
+		color: #ffffff;
+		font-weight:300;
+		font-size: 0.85em;
+	}
+}
