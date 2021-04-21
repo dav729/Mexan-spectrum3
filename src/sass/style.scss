@@ -9,6 +9,13 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
+	
+	@media(max-width: $tablet) {
+		font-size: 22px!important;
+	}
+	@media(max-width: $mobile) {
+		font-size: 24px!important;
+	}
 }
 h1, h2, h3, h4 {
 	color: $color-blue;
@@ -91,5 +98,64 @@ p {
 		color: #ffffff;
 		font-weight:300;
 		font-size: 0.85em;
+	}
+}
+.icon {
+	width: 48px;
+    height: 48px;
+    display: block;
+
+    &.icon--chat {
+    	background: url("../i/chat.svg");
+    }
+    &.icon--books {
+    	background: url("../i/books.svg");
+    }
+    &.icon--marks {
+    	background: url("../i/marks.svg");
+    }
+}
+.competence {
+	
+	&__box {
+		border-left: 1px solid $color-blue;
+		padding: 0 43px;
+		margin-bottom: 1.5em;
+		@media(max-width: $mobile) {
+			border-left: none;
+		}
+	}
+	&__box:first-child {
+		border-left: none;
+		padding: 0 45px 0 0;
+
+		@media(max-width: $tablet) {
+			border-left: 1px solid $color-blue;
+			padding: 0 43px;
+		}
+		@media(max-width: $mobile) {
+			border-left: none;
+		}
+	}
+}
+.info-box{
+
+	&__img {
+		width: 100%;
+	}
+}
+.btn-yellow {
+	background-color: $color-orange;
+    font-size: 19px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 200;
+    width: 212px;
+    padding: 0.475rem 0.75rem 0.375rem;
+	border: none;
+	display: block;
+	
+	&:hover {
+		background-color: $color-blue;
 	}
 }
