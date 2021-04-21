@@ -126,11 +126,16 @@ p {
   display: block;
 }
 
-.top-banner {
-  background-image: url("../i/home.jpeg");
+.banner {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.banner--home {
+  background-image: url("../i/home.jpeg");
+}
+.banner--about {
+  background-image: url("../i/about.jpeg");
 }
 
 .icon {
@@ -151,6 +156,9 @@ p {
   background: url("../i/arrow.svg");
   height: 20px;
   width: 20px;
+}
+.icon.icon--people {
+  background: url("../i/people.svg");
 }
 
 .navbar-toggler-icon {

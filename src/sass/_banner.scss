@@ -1,6 +1,11 @@
-.top-banner {
-	background-image: url("../i/home.jpeg");
+.banner {
 	height: 400px;
 	background-repeat: no-repeat;
     background-size: cover;
+    &--home {
+    	background-image: url("../i/home.jpeg");
+    }
+    &--about {
+    	background-image: url("../i/about.jpeg");
+    }
 }
