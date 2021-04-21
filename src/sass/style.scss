@@ -22,6 +22,14 @@ h1, h2, h3, h4 {
 	font-family: $title-font, sans-serif;
 	font-weight: 600;
 }
+h2 {
+	@media(max-width: $tablet) {
+		font-size: 1.7rem
+	}
+	@media(max-width: $mobile) {
+		font-size: 1.6rem
+	}
+}
 p {
 	font-weight: 200;
 }
@@ -55,7 +63,9 @@ p {
     background-size: cover;
 }
 .navbar-nav {
-	
+	& .nav-item {
+		margin: 0 15px;
+	}
 	& .nav-link {
 		color: $color-dark;
 		font-weight: 300;
@@ -84,6 +94,10 @@ p {
 			color: $color-orange!important;
 			background-color: #ffffff;
 		}
+	}
+	@media(max-width: $tablet) {
+		display: block;
+		border-bottom: none;		
 	}
 }
 .footer {
@@ -190,4 +204,7 @@ p {
 	&__date {
 		font-size: 0.9rem;
 	}
+}
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23101010' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
