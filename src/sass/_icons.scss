@@ -3,6 +3,7 @@
     height: 48px;
     display: block;
 
+
     &.icon--chat {
     	background: url("../i/chat.svg");
     }
@@ -11,6 +12,11 @@
     }
     &.icon--marks {
     	background: url("../i/marks.svg");
+    }
+    &.icon--list {
+        background: url("../i/list.png");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     &.icon--arrow {
     	background: url("../i/arrow.svg");
