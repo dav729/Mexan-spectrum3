@@ -1,0 +1,12 @@
+.activities {
+	background: $color-lightgrey;
+	border-left:4px solid $color-blue;
+	padding: 46px 46px 20px;
+
+	&__title {
+		font-size: 1.368rem;
+	}
+	&__ul li {
+		padding: 5px 0;
+	}
+}

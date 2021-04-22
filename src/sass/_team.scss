@@ -10,7 +10,7 @@
 	width:100%;
 	border-bottom: 1px solid $color-blue;
 }
-.team__list {
+.ul--bluebullet {
   list-style: none;
   padding-left: 17px;
   & li {
@@ -26,6 +26,3 @@
 	  margin-left: -1em;
 	}
 }
-
-ul 
-.team__list {}
