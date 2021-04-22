@@ -1,0 +1,21 @@
+.article {
+	border-top: 1px solid $color-blue;
+	padding-top: 20px;
+	margin-top: 20px;
+
+	&__date {
+		font-size: 0.85rem;
+		font-weight: 200;
+	}
+	&__title {
+		font-size: 1.4rem;
+	}
+	& p a {
+		color: $color-orange;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

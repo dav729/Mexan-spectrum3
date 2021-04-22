@@ -159,6 +159,15 @@ p {
 .banner--about {
   background-image: url("../i/about.jpeg");
 }
+.banner--angebot {
+  background-image: url("../i/offer.jpeg");
+}
+.banner--ref {
+  background-image: url("../i/reference.jpeg");
+}
+.banner--news {
+  background-image: url("../i/news.jpeg");
+}
 
 .icon {
   width: 48px;
@@ -392,6 +401,47 @@ p {
   text-decoration: none;
   color: #101010;
   background-position: 99% 50%;
+}
+
+.article {
+  border-top: 1px solid #003883;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.article__date {
+  font-size: 0.85rem;
+  font-weight: 200;
+}
+.article__title {
+  font-size: 1.4rem;
+}
+.article p a {
+  color: #f39b10;
+  text-decoration: underline;
+}
+.article p a:hover {
+  text-decoration: none;
+}
+
+.pagination__box {
+  border-top: 1px solid #003883;
+  padding-top: 50px;
+  margin-top: 40px;
+}
+
+.pagination .page-item {
+  margin: 0 2px;
+}
+.pagination .page-item .page-link {
+  border-radius: 0;
+  color: #ffffff;
+  background: #003883;
+}
+.pagination .page-item .page-link.active {
+  background: #f39b10;
+}
+.pagination .page-item .page-link:hover {
+  background: #f39b10;
 }
 
 /*# sourceMappingURL=style.css.map */
