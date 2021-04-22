@@ -3,15 +3,50 @@
 	border-bottom: 2px solid #ffffff;
 
 	&__link {
+		width: 100%;
 		background: #ffffff;
 		display: block;
-		padding: 15px 20px;
+		padding: 18px 30px 18px 80px;
 		text-decoration: none;
+		color: $color-blue;
+		font-size: 1.15rem;
+		font-weight: 500;
+		line-height: 1.15rem;
+		font-family: $title-font, serif;
+		background-size: 38px;
+		background-position: 5% 50%;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+		
+		&--chart {
+			background-image: url("../i/marks.svg");
+		}
+		&--books {
+			background-image: url("../i/books.svg");
+		}
+		&--list {
+			background-image: url("../i/list.png");
+			background-size: 28px;
+		}
+		&--envelope {
+			background-image: url("../i/envelope.svg");
+		}
+		&--arrow {
+			width: 20px;
+			height: 20px;
+			float: right;
+			background: url("../i/arrow.svg");
+			transition: transform 1s;
+			margin-top: 2px;
+		}
 		&:hover {
 			text-decoration: none;
+			color: $color-blue;
 		}
+		&:hover .more-info__link--arrow {
+			transform: translateX(40%);
+		}
+
 	}
-	& .link__el {
-			display: inline-block;
-		}
+	
 }

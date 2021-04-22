@@ -299,16 +299,48 @@ p {
   border-bottom: 2px solid #ffffff;
 }
 .more-info__link {
+  width: 100%;
   background: #ffffff;
   display: block;
-  padding: 15px 20px;
+  padding: 18px 30px 18px 80px;
   text-decoration: none;
+  color: #003883;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.15rem;
+  font-family: "Frank Ruhl Libre", serif;
+  background-size: 38px;
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.more-info__link--chart {
+  background-image: url("../i/marks.svg");
+}
+.more-info__link--books {
+  background-image: url("../i/books.svg");
+}
+.more-info__link--list {
+  background-image: url("../i/list.png");
+  background-size: 28px;
+}
+.more-info__link--envelope {
+  background-image: url("../i/envelope.svg");
+}
+.more-info__link--arrow {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background: url("../i/arrow.svg");
+  transition: transform 1s;
+  margin-top: 2px;
 }
 .more-info__link:hover {
   text-decoration: none;
+  color: #003883;
 }
-.more-info .link__el {
-  display: inline-block;
+.more-info__link:hover .more-info__link--arrow {
+  transform: translateX(40%);
 }
 
 /*# sourceMappingURL=style.css.map */
